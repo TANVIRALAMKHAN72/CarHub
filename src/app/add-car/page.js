@@ -26,7 +26,7 @@ export default function AddProductForm() {
     }
 
     try {
-     const res = await fetch("http://localhost:5000/cars", {
+     const res = await fetch("https://carhub-server-odm9n006p-tanvir-alam-khans-projects.vercel.app/cars", {
   method: "POST",
   headers: { "Content-Type": "application/json" },
   body: JSON.stringify(formData),

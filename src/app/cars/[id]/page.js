@@ -10,7 +10,7 @@ export default function CarDetails() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/cars/${id}`)
+    fetch(`https://carhub-server-odm9n006p-tanvir-alam-khans-projects.vercel.app/cars/${id}`)
       .then(res => res.json())
       .then(data => {
         setCar(data);

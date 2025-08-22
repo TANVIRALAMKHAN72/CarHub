@@ -10,7 +10,7 @@ export default function FeaturedCars() {
   const router = useRouter();
 
   useEffect(() => {
-    fetch("http://localhost:5000/cars")
+    fetch("https://carhub-server-odm9n006p-tanvir-alam-khans-projects.vercel.app/cars")
       .then((res) => res.json())
       .then((data) => {
         if (Array.isArray(data)) {
