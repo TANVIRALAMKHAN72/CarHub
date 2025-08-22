@@ -7,7 +7,6 @@ export default function Footer() {
     <footer className="bg-gray-900 text-gray-300 py-16 px-6 md:px-16">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
         
-        {/* Logo + Description */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
           <Image 
             src={'/images-removebg-preview.png'} 
@@ -22,7 +21,6 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Social Icons */}
         <div className="flex flex-col items-center md:items-end text-center md:text-right">
           <h2 className="text-xl font-semibold text-white mb-4">Follow Us</h2>
           <div className="flex gap-4">
@@ -35,7 +33,6 @@ export default function Footer() {
 
       </div>
 
-      {/* Copyright */}
       <div className="text-center text-gray-500 mt-12 border-t border-gray-800 pt-6">
         © {new Date().getFullYear()} CarHub. All rights reserved.
       </div>

@@ -14,7 +14,7 @@ export default function FeaturedCars() {
       .then((res) => res.json())
       .then((data) => {
         if (Array.isArray(data)) {
-          setCars(data.slice(0, 6)); // শুধুমাত্র প্রথম 6টি গাড়ি দেখাবে
+          setCars(data.slice(0, 6)); 
         } else {
           console.error("Data is not array:", data);
         }
@@ -61,7 +61,6 @@ export default function FeaturedCars() {
         ))}
       </div>
 
-      {/* See All Button */}
       <div className="flex justify-center mt-8">
         <button
           onClick={() => router.push("/cars")}

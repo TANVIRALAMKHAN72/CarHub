@@ -24,9 +24,7 @@ export default function Navbar() {
 
   return (
     <div className="navbar bg-base-100 shadow-sm px-4">
-      {/* Navbar Start */}
       <div className="navbar-start">
-        {/* Mobile dropdown */}
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
             <svg
@@ -52,7 +50,6 @@ export default function Navbar() {
           </ul>
         </div>
 
-        {/* Logo */}
         <Link href={"/"} className="flex items-center gap-2">
           <Image
             src={"/images-removebg-preview.png"}
@@ -64,12 +61,10 @@ export default function Navbar() {
         </Link>
       </div>
 
-      {/* Navbar Center for Desktop */}
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navMenu()}</ul>
       </div>
 
-      {/* Navbar End */}
       <div className="navbar-end">
        <Link href="/login" className="btn btn-outline btn-primary">
   Login

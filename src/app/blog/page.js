@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 
-// Static JSON data
 const blogPosts = [
  {
     id: 1,

@@ -6,13 +6,12 @@ export default function Hero() {
   const router = useRouter();
 
   const handleGetStarted = () => {
-    router.push("/cars"); // এখানে আপনার cars পেজের path দিন
+    router.push("/cars"); 
   };
 
   return (
     <section className="relative w-full h-[90vh] flex items-center justify-center bg-gradient-to-r from-gray-900 via-black to-gray-900 text-white overflow-hidden">
       
-      {/* Background image with overlay */}
       <div className="absolute inset-0">
         <img
           src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d"
@@ -21,7 +20,6 @@ export default function Hero() {
         />
       </div>
 
-      {/* Content */}
       <div className="relative z-10 text-center max-w-3xl px-6">
         <motion.h1
           initial={{ y: -50, opacity: 0 }}
@@ -42,7 +40,6 @@ export default function Hero() {
           <span className="font-semibold text-white">Car Hub</span>.
         </motion.p>
 
-        {/* Buttons */}
         <motion.div
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
@@ -58,7 +55,6 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      {/* Decorative circle effect */}
       <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-red-600 rounded-full opacity-20 blur-3xl"></div>
       <div className="absolute -top-40 -left-40 w-96 h-96 bg-blue-600 rounded-full opacity-20 blur-3xl"></div>
     </section>

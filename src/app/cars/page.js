@@ -56,7 +56,6 @@ export default function CarsPage() {
             <p className="text-gray-600 mb-1">Brand: {car.brand}</p>
             <p className="text-gray-800 font-bold">Price: ${car.price}</p>
 
-            {/* Details Button */}
             <Link href={`/cars/${car._id}`}>
               <button className="mt-3 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">
                 View Details

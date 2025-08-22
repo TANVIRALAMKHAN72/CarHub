@@ -12,17 +12,14 @@ export default function AddProductForm() {
     image: "",
   });
 
-  // Handle input change
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  // Handle form submit
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // simple validation
     if (!formData.name || !formData.brand || !formData.price) {
       alert("Please fill all required fields!");
       return;
@@ -61,7 +58,6 @@ export default function AddProductForm() {
       </h2>
 
       <form onSubmit={handleSubmit} className="space-y-5">
-        {/* Name */}
         <div>
           <label className="block text-sm font-medium mb-1">Name</label>
           <input
@@ -75,7 +71,6 @@ export default function AddProductForm() {
           />
         </div>
 
-        {/* Brand */}
         <div>
           <label className="block text-sm font-medium mb-1">Brand</label>
           <input
@@ -89,7 +84,6 @@ export default function AddProductForm() {
           />
         </div>
 
-        {/* Year */}
         <div>
           <label className="block text-sm font-medium mb-1">Year</label>
           <input
@@ -102,7 +96,6 @@ export default function AddProductForm() {
           />
         </div>
 
-        {/* Price */}
         <div>
           <label className="block text-sm font-medium mb-1">Price</label>
           <input
@@ -116,7 +109,6 @@ export default function AddProductForm() {
           />
         </div>
 
-        {/* Description */}
         <div>
           <label className="block text-sm font-medium mb-1">Description</label>
           <textarea
@@ -129,7 +121,6 @@ export default function AddProductForm() {
           ></textarea>
         </div>
 
-        {/* Image URL */}
         <div>
           <label className="block text-sm font-medium mb-1">Image URL</label>
           <input
@@ -142,7 +133,6 @@ export default function AddProductForm() {
           />
         </div>
 
-        {/* Submit Button */}
         <button
           type="submit"
           className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition"

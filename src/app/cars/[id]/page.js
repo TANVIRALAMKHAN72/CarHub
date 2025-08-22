@@ -37,10 +37,9 @@ export default function CarDetails() {
   return (
     <div className="container mx-auto px-5 py-10">
       <div className="flex flex-col lg:flex-row gap-8 items-center lg:items-start">
-        {/* Image Section */}
         <div className="relative w-full lg:w-1/2 h-80 lg:h-[400px] rounded-xl overflow-hidden shadow-2xl">
          <Image
-  src={car.image || "/placeholder.png"} // fallback image
+  src={car.image || "/placeholder.png"} 
   alt={car.name || "Car Image"}
   fill
   className="object-cover transition-transform duration-500 hover:scale-105"
@@ -48,7 +47,6 @@ export default function CarDetails() {
 
         </div>
 
-        {/* Details Section */}
         <div className="w-full lg:w-1/2 flex flex-col gap-4">
           <h1 className="text-4xl font-bold text-gray-900">{car.name}</h1>
           <p className="text-gray-600 text-lg">Brand: <span className="font-semibold">{car.brand}</span></p>
